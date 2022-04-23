@@ -22,7 +22,7 @@ const findByIdPaletasController = async (req, res) => {
 const createPaletaController = async (req, res) => {
   const paleta = req.body;
   const newPaleta = await paletaService.createPaletaService(paleta);
-  res.send(201).send(newPaleta);
+  res.status(201).send(newPaleta);
 };
 
 // Controller for update paleta

@@ -24,15 +24,15 @@ const updatePaletaService = async (idParam, paletaEdited) => {
   return updatePaleta;
 };
 
-// Service for delete paleta 
+// Service for delete paleta
 const deletePaletaService = async (idParam) => {
-    return await Paletas.findByIdAndRemove(idParam);
+  return await Paletas.findByIdAndRemove(idParam);
 };
 
 module.exports = {
-    findAllPaletasService,
-    findByIdPaletasService,
-    createPaletaService,
-    updatePaletaService,
-    deletePaletaService,
+  findAllPaletasService,
+  findByIdPaletasService,
+  createPaletaService,
+  updatePaletaService,
+  deletePaletaService,
 };

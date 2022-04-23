@@ -25,10 +25,10 @@ const validObcjectBody = (req, res, next) => {
       mensagem: 'Preencha todos os campos!',
     });
   }
-
+  next();
 };
 
 module.exports = {
-    validId,
-    validObcjectBody,
-}
+  validId,
+  validObcjectBody,
+};

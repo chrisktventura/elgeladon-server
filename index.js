@@ -13,5 +13,5 @@ app.use(express.json());
 app.use('/paletas', routes);
 
 app.listen(port, () => {
-    console.log(`Server is running on port http://localhost:${port}`);
+  console.log(`Server is running on port http://localhost:${port}`);
 });
