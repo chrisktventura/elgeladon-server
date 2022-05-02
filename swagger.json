@@ -45,7 +45,7 @@
         }
       }
     },
-    "/paleta/{id}": {
+    "/one-paleta/{id}": {
       "get": {
         "summary": "Busca uma paleta pelo ID",
         "description": "Rota responsável por buscar uma paleta pelo ID",
