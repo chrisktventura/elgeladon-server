@@ -19,7 +19,7 @@ route.get('/api-docs', swaggerUi.setup(swaggerDocument));
 // GET all paletas
 route.get('/all-paletas', controllerPaletas.findAllPaletasController);
 // GET chosen paleta
-route.get('/paleta/:id', validId, controllerPaletas.findByIdPaletasController);
+route.get('/one-paleta/:id', validId, controllerPaletas.findByIdPaletasController);
 // POST create paleta
 route.post(
   '/create-paleta',
