@@ -7,7 +7,16 @@ const {
   validObcjectBody,
 } = require('../middlewares/paleta.middleware');
 
-const controllerCarinho = require('../controllers/carrinho.controller');
+const controllerCarrinho = require('../controllers/carrinho.controller');
+route.get('/all-carrinho', controllerCarrinho.findAllCarrinhoController);
+route.post(
+  '/create-carrinho',
+  controllerCarrinho.createManyItemsCarrinhoController,
+);
+route.delete(
+  '/finish-carrinho',
+  controllerCarrinho.deleteAllItemsCarrinhoController,
+);
 
 
 
@@ -40,16 +49,6 @@ route.delete(
   controllerPaletas.deletePaletaController,
 );
 
-// route.get('/all-carrinho', controllerCarinho.findAllCarrinhoController);
 
-// route.post(
-//   '/create-carrinho',
-//   validObjectBodyCarrinho,
-//   controllerCarinho.createManyItemsCarrinhoController,
-// );
-// route.delete(
-//   '/finish-carrinho',
-//   controllerCarinho.deleteAllItemsCarrinhoController,
-// );
 
 module.exports = route;
